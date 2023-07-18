@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
- baseURL: 'http://google.gui.dev.br:3002',
+ baseURL: 'https://google.gui.dev.br:3102',
 })
 
 export default api;

@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Barrissa1
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+  node:
+    build: .
+    restart: always
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+      - db_host=db
+      - db_user=postgres
+      - db_password=Barrissa1
+      - db_name=postgres
+    ports:
+      - "3002:3000"
+    depends_on:
+      - db

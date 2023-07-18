@@ -34,7 +34,7 @@ routes.delete('/incidents/:id',celebrate({
 
 routes.get('/profile',celebrate({
  [Segments.HEADERS]:Joi.object({
-	Authorization:Joi.string().required()
+	authorization:Joi.string().required()
  }).unknown()
 }), ProfileController.index);
 

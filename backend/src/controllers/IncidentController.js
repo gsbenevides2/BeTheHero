@@ -34,6 +34,7 @@ module.exports = {
 	const ong_id = request.headers.authorization;
 
 	const [id] = await connection('incidents')
+	.returning('id')
 	 .insert({
 		title,
 		description,
