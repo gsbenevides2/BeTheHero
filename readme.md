@@ -14,8 +14,12 @@
 <p align="justify">
 Projeto resultado da <a href="https://github.com/Rocketseat/semana-omnistack-11">Semana OmniStack 11</a> da <a href="https://rocketseat.com.br/">Rocketseat</a>. Uma aplicação para ajudar as ongs na arrecadação de fundos.
 </p>
+
 <p align="center">
-<img src=".github/Capa.png">
+  <a href="https://www.youtube.com/watch?v=KKmXsj1vxeE">
+  <img src=".github/Capa.png">
+  Veja esse video demonstração!
+  </a>
 </p>
  
 <h2>👨‍💻 Tecnologias Utilizadas</h2>
