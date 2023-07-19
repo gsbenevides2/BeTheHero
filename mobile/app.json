@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#e02041"
-      }
+      },
+      "package": "com.gsbenevides2.bethehero"
     },
     "androidStatusBar": {
       "backgroundColor": "#e02041",
@@ -30,6 +31,11 @@
     "androidNavigationBar": {
       "backgroundColor": "#e02041",
       "barStyle": "light-content"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7c3c5e33-e03a-47d4-bde6-c79618e85e8c"
+      }
     }
   }
 }
